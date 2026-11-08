@@ -152,7 +152,9 @@ a:focus-visible,
 }
 
 .about-container {
-    justify-content: center;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-text {
