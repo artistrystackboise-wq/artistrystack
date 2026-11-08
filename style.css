@@ -325,3 +325,69 @@ footer a:hover {
         transition: none !important;
     }
 }
+/* Paste at the bottom of style.css */
+.bundle-card{
+  grid-column:1 / -1;           /* spans the full row if your cards sit in a grid */
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:40px;
+  margin-top:24px;
+  padding:40px;
+  background:#1A1D20;
+  color:#F7F7F8;
+  border-radius:2px;
+}
+.bundle-info{max-width:560px}
+.bundle-info{text-align:left}
+.bundle-tag{
+  display:inline-block;
+  background:#89371c;
+  color:#fff;
+  font:600 10px Montserrat,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  padding:6px 12px;
+  margin-bottom:16px;
+  border-radius:2px;
+}
+.bundle-card h3{
+  font-family:"Playfair Display",Georgia,serif;
+  font-weight:400;
+  font-size:clamp(26px,4vw,34px);
+  line-height:1.15;
+  margin:0 0 12px;
+  color:#F7F7F8;
+}
+.bundle-card p{margin:0 0 18px;color:#c4c8ce;font-size:15px}
+.bundle-card ul{list-style:none;margin:0;padding:0;font-size:13px;color:#c4c8ce}
+.bundle-card li{padding:7px 0;border-bottom:1px solid #33373d}
+.bundle-buy{text-align:center;min-width:220px}
+.bundle-price{font-family:"Playfair Display",Georgia,serif;font-size:52px;line-height:1}
+.bundle-was{margin-top:8px;font-size:13px;color:#9aa0a8}
+.bundle-save{
+  display:block;
+  margin:6px 0 22px;
+  font:600 11px Montserrat,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#e0a58c;
+}
+.bundle-btn{
+  display:block;
+  background:#F7F7F8;
+  color:#1A1D20;
+  text-decoration:none;
+  padding:14px 18px;
+  font:600 12px Montserrat,sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  border-radius:2px;
+}
+.bundle-btn:hover{background:#fff}
+@media (max-width:760px){
+  .bundle-card{flex-direction:column;align-items:stretch;padding:28px 22px;gap:28px}
+  .bundle-buy{min-width:0}
+}
+.card-link{display:inline-block;margin-top:20px;padding-bottom:3px;font:600 12px Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#89371c;text-decoration:none;border-bottom:1px solid #89371c}
+.card-link:hover{color:#612714;border-color:#612714}
