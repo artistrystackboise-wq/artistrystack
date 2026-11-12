@@ -391,3 +391,9 @@ footer a:hover {
 }
 .card-link{display:inline-block;margin-top:20px;padding-bottom:3px;font:600 12px Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#89371c;text-decoration:none;border-bottom:1px solid #89371c}
 .card-link:hover{color:#612714;border-color:#612714}
+/* Language switch (EN / ES) */
+.nav-actions{display:flex;align-items:center;gap:1.5rem}
+.lang-toggle{background:none;border:0;border-bottom:1px solid transparent;padding:3px 0;font:600 0.8rem 'Montserrat',sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--accent-Auburn);cursor:pointer;transition:color .3s,border-color .3s}
+.lang-toggle:hover{color:var(--accent-Jambalaya);border-color:var(--accent-Jambalaya)}
+.lang-toggle:focus-visible{outline:2px solid var(--accent-Auburn);outline-offset:3px}
+@media (max-width:768px){.nav-actions{gap:1rem}.lang-toggle{font-size:0.75rem}}

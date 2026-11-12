@@ -53,58 +53,60 @@ section h2{font-size:clamp(28px,5vw,40px);margin-bottom:28px}
 .about-photo figcaption a{color:var(--accent)}
 footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.lang-toggle{background:none;border:0;padding:0;margin-left:18px;font:600 12px Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);cursor:pointer}
+.lang-toggle:hover{color:var(--deep)}
 @media (max-width:700px){.about-grid{grid-template-columns:1fr;gap:28px}.about-photo{max-width:300px}}
 @media (max-width:520px){nav a:not(:last-child){display:none}}
 </style>
 </head>
 <body>
-<div class="back">This is a sample site built by The Artistry Stack. <a href="index.html">Back to The Artistry Stack</a></div>
+<div class="back" data-i18n="back">This is a sample site built by The Artistry Stack. <a href="index.html">Back to The Artistry Stack</a></div>
 <header>
   <a class="logo" href="#top">Maren Cole Hair</a>
-  <nav><a href="#services">Services</a><a href="#about">About</a><a href="#book">Book</a></nav>
+  <nav><a href="#services" data-i18n="nav.services">Services</a><a href="#about" data-i18n="nav.about">About</a><a href="#book" data-i18n="nav.book">Book</a><button type="button" id="lang-toggle" class="lang-toggle" lang="es">Español</button></nav>
 </header>
 
 <main id="top" class="wrap">
   <div class="hero">
-    <h1>Color and cuts, made slowly.</h1>
-    <p>A private one-chair suite in Boise. Every appointment is just you, your hair, and enough time to get it right.</p>
-    <a class="btn" href="#book">Book an appointment</a>
+    <h1 data-i18n="hero.title">Color and cuts, made slowly.</h1>
+    <p data-i18n="hero.text">A private one-chair suite in Boise. Every appointment is just you, your hair, and enough time to get it right.</p>
+    <a class="btn" href="#book" data-i18n="hero.cta">Book an appointment</a>
   </div>
 
   <section id="services">
-    <h2>Services</h2>
+    <h2 data-i18n="services.title">Services</h2>
     <ul class="menu">
-      <li><div><strong>Signature cut</strong><span class="d">Consultation, wash, cut, and style. About 60 minutes.</span></div><span class="price">$85</span></li>
-      <li><div><strong>Full color</strong><span class="d">One shade, root to end, with gloss. About 2 hours.</span></div><span class="price">$140</span></li>
-      <li><div><strong>Dimensional highlights</strong><span class="d">Foils or balayage with toner and blowout. About 3 hours.</span></div><span class="price">$260</span></li>
-      <li><div><strong>Gloss and blowout</strong><span class="d">Shine treatment and styled finish. About 45 minutes.</span></div><span class="price">$70</span></li>
+      <li><div><strong data-i18n="s1.name">Signature cut</strong><span class="d" data-i18n="s1.desc">Consultation, wash, cut, and style. About 60 minutes.</span></div><span class="price">$85</span></li>
+      <li><div><strong data-i18n="s2.name">Full color</strong><span class="d" data-i18n="s2.desc">One shade, root to end, with gloss. About 2 hours.</span></div><span class="price">$140</span></li>
+      <li><div><strong data-i18n="s3.name">Dimensional highlights</strong><span class="d" data-i18n="s3.desc">Foils or balayage with toner and blowout. About 3 hours.</span></div><span class="price">$260</span></li>
+      <li><div><strong data-i18n="s4.name">Gloss and blowout</strong><span class="d" data-i18n="s4.desc">Shine treatment and styled finish. About 45 minutes.</span></div><span class="price">$70</span></li>
     </ul>
   </section>
 
   <section id="book">
-    <h2>Book online</h2>
+    <h2 data-i18n="book.title">Book online</h2>
     <div class="book">
-      <h3>Service</h3>
+      <h3 data-i18n="book.service">Service</h3>
       <div class="chips" id="svc"></div>
-      <h3>Day</h3>
+      <h3 data-i18n="book.day">Day</h3>
       <div class="chips" id="day"></div>
-      <h3>Time</h3>
+      <h3 data-i18n="book.time">Time</h3>
       <div class="chips" id="time"></div>
       <p class="summary" id="sum">Choose a service, day, and time.</p>
-      <button class="btn" id="go" disabled>Request appointment</button>
+      <button class="btn" id="go" disabled data-i18n="book.go">Request appointment</button>
       <div class="done" id="done" role="status"></div>
     </div>
   </section>
 
   <section id="about" class="about">
-    <h2>About Maren</h2>
+    <h2 data-i18n="about.title">About Maren</h2>
     <div class="about-grid">
       <div>
-        <p>Maren has been behind the chair for twelve years and moved into her own suite so she could slow down. New clients fill out a short intake form before their first visit, so the appointment starts with your hair goals instead of paperwork.</p>
+        <p data-i18n="about.text">Maren has been behind the chair for twelve years and moved into her own suite so she could slow down. New clients fill out a short intake form before their first visit, so the appointment starts with your hair goals instead of paperwork.</p>
       </div>
       <figure class="about-photo">
-        <img src="demo-pic.jpg" alt="Modern hair salon interior with styled chairs and mirrors" loading="lazy">
-        <figcaption>
+        <img src="demo-pic.jpg" alt="Modern hair salon interior with styled chairs and mirrors" data-i18n-alt="about.alt" loading="lazy">
+        <figcaption data-i18n="about.credit">
           Photo by <a href="https://unsplash.com/@bgoodpic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Barney Goodman</a> on <a href="https://unsplash.com/photos/a-modern-hair-salon-interior-with-stylish-chairs-and-mirrors-_Fy7Kq0w6OI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a>
         </figcaption>
       </figure>
@@ -113,24 +115,75 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 </main>
 
 <footer>
-  <div class="wrap"><span>Maren Cole Hair, Boise, Idaho</span><span>Tuesday to Saturday, by appointment</span></div>
+  <div class="wrap"><span>Maren Cole Hair, Boise, Idaho</span><span data-i18n="footer.hours">Tuesday to Saturday, by appointment</span></div>
 </footer>
 
 <script>
 (function(){
-  var services=[["Signature cut","$85"],["Full color","$140"],["Highlights","$260"],["Gloss and blowout","$70"]];
-  var times=["9:00 AM","11:00 AM","1:30 PM","3:30 PM"];
-  var sel={svc:null,day:null,time:null};
-  var days=[];
-  var d=new Date();
-  while(days.length<6){
-    d.setDate(d.getDate()+1);
-    if(d.getDay()>=2&&d.getDay()<=6){
-      days.push(d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}));
+  /* ---------- Language switching ----------
+     English lives in the HTML. Spanish lives in ES below.
+     The same saved choice is shared with index.html. */
+  var STORAGE_KEY="artistry-lang";
+  var ES={
+    "title":"Maren Cole Hair | Boise, Idaho",
+    "back":"Este es un sitio de muestra creado por The Artistry Stack. <a href=\"index.html\">Volver a The Artistry Stack</a>",
+    "nav.services":"Servicios","nav.about":"Acerca de","nav.book":"Reservar",
+    "hero.title":"Color y cortes, hechos sin prisa.",
+    "hero.text":"Una suite privada de una sola silla en Boise. Cada cita es solo para ti, tu cabello y el tiempo necesario para que quede perfecto.",
+    "hero.cta":"Reserva una cita",
+    "services.title":"Servicios",
+    "s1.name":"Corte de autor","s1.desc":"Consulta, lavado, corte y peinado. Unos 60 minutos.",
+    "s2.name":"Color completo","s2.desc":"Un solo tono, de raíz a puntas, con gloss. Unas 2 horas.",
+    "s3.name":"Mechas con dimensión","s3.desc":"Papel aluminio o balayage con matizador y secado con cepillo. Unas 3 horas.",
+    "s4.name":"Gloss y secado con cepillo","s4.desc":"Tratamiento de brillo y acabado peinado. Unos 45 minutos.",
+    "book.title":"Reserva en línea","book.service":"Servicio","book.day":"Día","book.time":"Hora",
+    "book.go":"Solicitar cita",
+    "about.title":"Sobre Maren",
+    "about.text":"Maren lleva doce años detrás de la silla y se mudó a su propia suite para poder trabajar sin prisas. Los clientes nuevos llenan un breve formulario de admisión antes de su primera visita, así la cita empieza con tus metas para tu cabello y no con papeleo.",
+    "about.alt":"Interior de un salón de belleza moderno con sillas y espejos elegantes",
+    "about.credit":"Foto de <a href=\"https://unsplash.com/@bgoodpic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\" target=\"_blank\" rel=\"noopener\">Barney Goodman</a> en <a href=\"https://unsplash.com/photos/a-modern-hair-salon-interior-with-stylish-chairs-and-mirrors-_Fy7Kq0w6OI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\" target=\"_blank\" rel=\"noopener\">Unsplash</a>",
+    "footer.hours":"De martes a sábado, con cita previa"
+  };
+
+  /* Text the booking widget builds with JavaScript */
+  var BOOK={
+    en:{
+      services:[["Signature cut","$85"],["Full color","$140"],["Highlights","$260"],["Gloss and blowout","$70"]],
+      times:["9:00 AM","11:00 AM","1:30 PM","3:30 PM"],
+      locale:"en-US",
+      prompt:"Choose a service, day, and time.",
+      summary:function(s,d,t){return s+" on "+d+" at "+t},
+      done:"Request sent. You’ll get a confirmation and a short intake form by email. This is a demo, so nothing was actually booked."
+    },
+    es:{
+      services:[["Corte de autor","$85"],["Color completo","$140"],["Mechas","$260"],["Gloss y secado","$70"]],
+      times:["9:00 a. m.","11:00 a. m.","1:30 p. m.","3:30 p. m."],
+      locale:"es-US",
+      prompt:"Elige un servicio, día y hora.",
+      summary:function(s,d,t){return s+" el "+d+(/^1:/.test(t)?" a la ":" a las ")+t},
+      done:"Solicitud enviada. Recibirás una confirmación y un breve formulario de admisión por correo. Esto es una demostración, así que no se reservó nada."
     }
+  };
+
+  var nodes=document.querySelectorAll("[data-i18n]");
+  var altNodes=document.querySelectorAll("[data-i18n-alt]");
+  var EN={title:document.title};
+  nodes.forEach(function(n){EN[n.getAttribute("data-i18n")]=n.innerHTML});
+  altNodes.forEach(function(n){EN[n.getAttribute("data-i18n-alt")]=n.getAttribute("alt")});
+  var toggle=document.getElementById("lang-toggle");
+  var lang;
+
+  function savedChoice(){try{return localStorage.getItem(STORAGE_KEY)}catch(e){return null}}
+  function deviceLang(){
+    var list=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||"en"];
+    return /^es\b/i.test(list[0])?"es":"en";
   }
+
+  /* ---------- Booking widget ---------- */
+  var sel;
   function build(id,items,key,label){
     var box=document.getElementById(id);
+    box.innerHTML="";
     items.forEach(function(it){
       var b=document.createElement("button");
       b.type="button";b.className="chip";b.setAttribute("aria-pressed","false");
@@ -145,19 +198,61 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     });
   }
   function update(){
+    var t=BOOK[lang];
     var ready=sel.svc&&sel.day&&sel.time;
     document.getElementById("go").disabled=!ready;
-    document.getElementById("sum").textContent=ready?sel.svc+" on "+sel.day+" at "+sel.time:"Choose a service, day, and time.";
+    document.getElementById("sum").textContent=ready?t.summary(sel.svc,sel.day,sel.time):t.prompt;
     document.getElementById("done").style.display="none";
   }
-  build("svc",services,"svc",function(s){return s[0]+" ("+s[1]+")"});
-  build("day",days,"day");
-  build("time",times,"time");
+  function renderBooking(){
+    var t=BOOK[lang];
+    sel={svc:null,day:null,time:null};
+    var days=[],d=new Date();
+    while(days.length<6){
+      d.setDate(d.getDate()+1);
+      if(d.getDay()>=2&&d.getDay()<=6){
+        days.push(d.toLocaleDateString(t.locale,{weekday:"short",month:"short",day:"numeric"}));
+      }
+    }
+    build("svc",t.services,"svc",function(s){return s[0]+" ("+s[1]+")"});
+    build("day",days,"day");
+    build("time",t.times,"time");
+    update();
+  }
   document.getElementById("go").onclick=function(){
     var el=document.getElementById("done");
-    el.textContent="Request sent. You’ll get a confirmation and a short intake form by email. This is a demo, so nothing was actually booked.";
+    el.textContent=BOOK[lang].done;
     el.style.display="block";
   };
+
+  /* ---------- Apply a language ---------- */
+  function apply(next){
+    lang=next;
+    var dict=lang==="es"?ES:EN;
+    nodes.forEach(function(n){
+      var k=n.getAttribute("data-i18n");
+      var v=dict[k]!=null?dict[k]:EN[k];
+      if(n.innerHTML!==v)n.innerHTML=v;
+    });
+    altNodes.forEach(function(n){
+      var k=n.getAttribute("data-i18n-alt");
+      n.setAttribute("alt",dict[k]!=null?dict[k]:EN[k]);
+    });
+    document.documentElement.lang=lang;
+    document.title=dict.title||EN.title;
+    toggle.textContent=lang==="es"?"English":"Español";
+    toggle.setAttribute("lang",lang==="es"?"en":"es");
+    toggle.setAttribute("aria-label",lang==="es"?"View this site in English":"Ver este sitio en español");
+    renderBooking();
+  }
+  toggle.addEventListener("click",function(){
+    var next=lang==="es"?"en":"es";
+    try{localStorage.setItem(STORAGE_KEY,next)}catch(e){}
+    apply(next);
+  });
+
+  var saved=savedChoice();
+  apply(saved==="en"||saved==="es"?saved:deviceLang());
 })();
 </script>
 </body>

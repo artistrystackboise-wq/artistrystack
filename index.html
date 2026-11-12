@@ -21,12 +21,16 @@
         <nav>
             <div class="logo">The Artistry Stack</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#demo">Live Demo</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#demo" data-i18n="nav.demo">Live Demo</a></li>
             </ul>
-            <!-- This will link out to your Google Survey -->
-            <a href="https://forms.gle/2KBvxhWdJHtZJwNcA" class="btn-primary">Get Started</a>
+            <div class="nav-actions">
+                <!-- Language switch: the script at the bottom sets its label -->
+                <button type="button" id="lang-toggle" class="lang-toggle" lang="es">Español</button>
+                <!-- This will link out to your Google Survey -->
+                <a href="https://forms.gle/2KBvxhWdJHtZJwNcA" class="btn-primary" data-i18n="cta">Get Started</a>
+            </div>
         </nav>
     </header>
 
@@ -35,9 +39,9 @@
         <!-- CSS Idea: Dark slate background with white text and a silver/grey button -->
         <section id="hero">
             <div class="hero-content">
-                <h1>Your Booking App Runs the Appointments. We Build Everything Around It.</h1>
-                <p>Keep GlossGenius, Vagaro, or Square for booking. We add a polished brand home, automated intake and liability forms, and a dashboard that shows what your products really cost you.</p>
-                <a href="https://forms.gle/2KBvxhWdJHtZJwNcA" class="btn-primary">Book a Consultation</a>
+                <h1 data-i18n="hero.title">Your Booking App Runs the Appointments. We Build Everything Around It.</h1>
+                <p data-i18n="hero.text">Keep GlossGenius, Vagaro, or Square for booking. We add a polished brand home, automated intake and liability forms, and a dashboard that shows what your products really cost you.</p>
+                <a href="https://forms.gle/2KBvxhWdJHtZJwNcA" class="btn-primary" data-i18n="hero.cta">Book a Consultation</a>
             </div>
         </section>
 
@@ -45,61 +49,61 @@
         <section id="about">
             <div class="about-container">
                 <div class="about-text">
-                    <h2>Bridging the Gap Between Tech and Cosmetology</h2>
-                    <p>I know the beauty industry because I'm licensed in it. You don't need a generic tech freelancer; you need someone who understands booth rent, double-booking, and retail product margins. I handle the code so you can focus on your chair.</p>
+                    <h2 data-i18n="about.title">Bridging the Gap Between Tech and Cosmetology</h2>
+                    <p data-i18n="about.text">I know the beauty industry because I'm licensed in it. You don't need a generic tech freelancer; you need someone who understands booth rent, double-booking, and retail product margins. I handle the code so you can focus on your chair.</p>
                 </div>
             </div>
         </section>
         <!-- DEMO SECTION: Your Portfolio -->
         <section id="demo">
             <div class="demo-content">
-                <h2>See It In Action</h2>
-                <p>Curious what a branded landing page looks like? Click below to explore a live demo built for an independent stylist.</p>
-                <a href="demo-site.html" target="_blank" rel="noopener" class="btn-secondary">View Demo Site</a>
+                <h2 data-i18n="demo.title">See It In Action</h2>
+                <p data-i18n="demo.text">Curious what a branded landing page looks like? Click below to explore a live demo built for an independent stylist.</p>
+                <a href="demo-site.html" target="_blank" rel="noopener" class="btn-secondary" data-i18n="demo.cta">View Demo Site</a>
             </div>
         </section>
 
         <!-- SERVICES SECTION: Tiered Pricing -->
         <section id="services">
-            <h2>Service Packages</h2>
+            <h2 data-i18n="services.title">Service Packages</h2>
             <div class="services-grid">
-                
+
                 <article class="service-card">
                     <h3>The Suite Starter Kit</h3>
                     <p class="price">$450</p>
-                    <p>A branded, mobile-friendly landing page that works with the booking app you already use, so clients see your style first and still book in GlossGenius, Vagaro, or Square.</p>
-                    <a class="card-link" href="https://forms.gle/S1STnycgMnBGGYE86">Get Started</a>                
+                    <p data-i18n="pkg1.text">A branded, mobile-friendly landing page that works with the booking app you already use, so clients see your style first and still book in GlossGenius, Vagaro, or Square.</p>
+                    <a class="card-link" href="https://forms.gle/S1STnycgMnBGGYE86" data-i18n="cta">Get Started</a>
                 </article>
 
                 <article class="service-card">
                     <h3>Client Onboarding Automation</h3>
                     <p class="price">$150</p>
-                    <p>Digitized intake and consent forms with automated signatures to protect your license and your time.</p>
-                    <a class="card-link" href="https://forms.gle/S1STnycgMnBGGYE86">Get Started</a>
+                    <p data-i18n="pkg2.text">Digitized intake and consent forms with automated signatures to protect your license and your time.</p>
+                    <a class="card-link" href="https://forms.gle/S1STnycgMnBGGYE86" data-i18n="cta">Get Started</a>
                 </article>
 
                 <article class="service-card">
                     <h3>Inventory & Metric Tracker</h3>
                     <p class="price">$200</p>
-                    <p>Custom data dashboards to track your backbar costs and maximize retail profit.</p>
-                    <a class="card-link" href="https://forms.gle/S1STnycgMnBGGYE86">Get Started</a>
+                    <p data-i18n="pkg3.text">Custom data dashboards to track your backbar costs and maximize retail profit.</p>
+                    <a class="card-link" href="https://forms.gle/S1STnycgMnBGGYE86" data-i18n="cta">Get Started</a>
                 </article>
                 <article class="bundle-card">
                     <div class="bundle-info">
-                        <span class="bundle-tag">Best value</span>
+                        <span class="bundle-tag" data-i18n="bundle.tag">Best value</span>
                         <h3>The Full Suite Setup</h3>
-                        <p>Everything above in one project: your landing page with booking, digital intake and consent forms, and your inventory and metric tracker.</p>
+                        <p data-i18n="bundle.text">Everything above in one project: your landing page with booking, digital intake and consent forms, and your inventory and metric tracker.</p>
                         <ul>
-                            <li>Branded landing page that links to your booking app</li>
-                            <li>Intake and consent forms with signatures</li>
-                            <li>Backbar cost and retail profit dashboards</li>
+                            <li data-i18n="bundle.li1">Branded landing page that links to your booking app</li>
+                            <li data-i18n="bundle.li2">Intake and consent forms with signatures</li>
+                            <li data-i18n="bundle.li3">Backbar cost and retail profit dashboards</li>
                         </ul>
                     </div>
                     <div class="bundle-buy">
                         <div class="bundle-price">$675</div>
-                        <div class="bundle-was">$800 if purchased separately</div>
-                        <span class="bundle-save">Save $125</span>
-                        <a class="bundle-btn" href="https://forms.gle/S1STnycgMnBGGYE86">Get Started</a>
+                        <div class="bundle-was" data-i18n="bundle.was">$800 if purchased separately</div>
+                        <span class="bundle-save" data-i18n="bundle.save">Save $125</span>
+                        <a class="bundle-btn" href="https://forms.gle/S1STnycgMnBGGYE86" data-i18n="cta">Get Started</a>
                     </div>
                 </article>
 
@@ -112,14 +116,96 @@
     <footer>
         <div class="footer-info">
             <h3>The Artistry Stack</h3>
-            <p>Serving independent beauty professionals in the Treasure Valley and beyond.</p>
+            <p data-i18n="footer.tagline">Serving independent beauty professionals in the Treasure Valley and beyond.</p>
             <p><a href="mailto:artistrystackboise@gmail.com">artistrystackboise@gmail.com</a></p>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 The Artistry Stack. All rights reserved. &middot; <a href="privacy.html">Privacy Policy</a></p>
-            <p class="photo-credit">Photo by <a href="https://unsplash.com/@philipphubert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Philipp Hubert</a> on <a href="https://unsplash.com/photos/soft-light-and-shadows-on-a-gradient-background-fnAAmCl7dDM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></p>
+            <p data-i18n="footer.copyright">&copy; 2026 The Artistry Stack. All rights reserved. &middot; <a href="privacy.html">Privacy Policy</a></p>
+            <p class="photo-credit" data-i18n="footer.credit">Photo by <a href="https://unsplash.com/@philipphubert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Philipp Hubert</a> on <a href="https://unsplash.com/photos/soft-light-and-shadows-on-a-gradient-background-fnAAmCl7dDM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></p>
         </div>
     </footer>
+
+    <!-- LANGUAGE SWITCHING
+         English lives in the HTML above. Spanish lives in the ES list below.
+         To edit Spanish copy, change the text in quotes next to the matching key. -->
+    <script>
+    (function () {
+        var STORAGE_KEY = "artistry-lang";
+
+        var ES = {
+            "title": "The Artistry Stack | Consultoría digital para profesionales de la belleza",
+            "nav.about": "Acerca de",
+            "nav.services": "Servicios",
+            "nav.demo": "Demo en vivo",
+            "cta": "Comenzar",
+            "hero.title": "Tu app de reservas maneja las citas. Nosotros construimos todo lo demás.",
+            "hero.text": "Sigue usando GlossGenius, Vagaro o Square para tus reservas. Nosotros agregamos una página de marca elegante, formularios automatizados de admisión y de responsabilidad, y un panel que te muestra cuánto te cuestan realmente tus productos.",
+            "hero.cta": "Agenda una consulta",
+            "about.title": "Uniendo la tecnología y la cosmetología",
+            "about.text": "Conozco la industria de la belleza porque tengo licencia en ella. No necesitas a un freelancer de tecnología cualquiera; necesitas a alguien que entienda la renta de silla, las citas duplicadas y los márgenes de los productos de venta. Yo me encargo del código para que tú te enfoques en tu silla.",
+            "demo.title": "Míralo en acción",
+            "demo.text": "¿Tienes curiosidad por ver cómo se ve una página de marca? Haz clic abajo para explorar una demo en vivo hecha para una estilista independiente.",
+            "demo.cta": "Ver sitio de demostración",
+            "services.title": "Paquetes de servicios",
+            "pkg1.text": "Una página de inicio con tu marca, adaptada para celulares, que funciona con la app de reservas que ya usas, para que tus clientes vean tu estilo primero y sigan reservando en GlossGenius, Vagaro o Square.",
+            "pkg2.text": "Formularios digitales de admisión y consentimiento con firmas automatizadas para proteger tu licencia y tu tiempo.",
+            "pkg3.text": "Paneles de datos personalizados para controlar el costo de tus productos profesionales (backbar) y maximizar las ganancias de tus ventas al público.",
+            "bundle.tag": "Mejor valor",
+            "bundle.text": "Todo lo anterior en un solo proyecto: tu página de inicio con reservas, formularios digitales de admisión y consentimiento, y tu control de inventario y métricas.",
+            "bundle.li1": "Página de inicio con tu marca, enlazada a tu app de reservas",
+            "bundle.li2": "Formularios de admisión y consentimiento con firmas",
+            "bundle.li3": "Paneles de costos de backbar y ganancias de ventas al público",
+            "bundle.was": "$800 si se compran por separado",
+            "bundle.save": "Ahorra $125",
+            "footer.tagline": "Al servicio de profesionales independientes de la belleza en el Treasure Valley y más allá.",
+            "footer.copyright": "&copy; 2026 The Artistry Stack. Todos los derechos reservados. &middot; <a href=\"privacy.html\">Política de privacidad</a>",
+            "footer.credit": "Foto de <a href=\"https://unsplash.com/@philipphubert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\" target=\"_blank\" rel=\"noopener\">Philipp Hubert</a> en <a href=\"https://unsplash.com/photos/soft-light-and-shadows-on-a-gradient-background-fnAAmCl7dDM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\" target=\"_blank\" rel=\"noopener\">Unsplash</a>"
+        };
+
+        // Save the original English straight from the page
+        var nodes = document.querySelectorAll("[data-i18n]");
+        var EN = { "title": document.title };
+        nodes.forEach(function (n) { EN[n.getAttribute("data-i18n")] = n.innerHTML; });
+
+        var toggle = document.getElementById("lang-toggle");
+        var current;
+
+        function savedChoice() {
+            try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+        }
+
+        // The visitor's top language from their device/browser settings
+        function deviceLang() {
+            var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+            return /^es\b/i.test(list[0]) ? "es" : "en";
+        }
+
+        function apply(lang) {
+            var dict = lang === "es" ? ES : EN;
+            nodes.forEach(function (n) {
+                var key = n.getAttribute("data-i18n");
+                var text = dict[key] != null ? dict[key] : EN[key];
+                if (n.innerHTML !== text) n.innerHTML = text;
+            });
+            document.documentElement.lang = lang;
+            document.title = dict.title || EN.title;
+            toggle.textContent = lang === "es" ? "English" : "Español";
+            toggle.setAttribute("lang", lang === "es" ? "en" : "es");
+            toggle.setAttribute("aria-label", lang === "es" ? "View this site in English" : "Ver este sitio en español");
+            current = lang;
+            if (window.clarity) window.clarity("set", "site_language", lang);
+        }
+
+        toggle.addEventListener("click", function () {
+            var next = current === "es" ? "en" : "es";
+            try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+            apply(next);
+        });
+
+        var saved = savedChoice();
+        apply(saved === "en" || saved === "es" ? saved : deviceLang());
+    })();
+    </script>
 
 </body>
 </html>
